@@ -1,0 +1,72 @@
+h1, h2, p, .btn, .spanMode, .spanVitesse, .parkMode, li{
+    font-family: 'Cera Round Pro', sans-serif;
+    color: #183153;
+}
+
+.rounded-circle{
+    margin-left: 100px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.row{
+    margin-top: 40px;
+}
+
+
+.bat-ISEN{
+    border-radius: 8px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-font{
+    font-family: 'Cera Round Pro', sans-serif;
+}
+.team_present{
+    float: right;
+}
+.modeActivate{
+    border: solid;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: #183153;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.spanMode{
+    color: white;
+    margin-left: 10px;
+}
+
+.parkMode{
+    color: white;
+    margin-left: 10px;
+}
+
+.parkButton{
+    margin-left: 40px;
+}
+
+.btn-outline-light{
+    color: white;
+}
+
+.spanVitesse{
+    color: white;
+    float: right;
+    margin-right : 25px;
+    margin-top: 5px;
+}
+
+.voiturePictureDiv{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.voiturePicture{
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+    border: solid;
+    border-radius: 8px;
+}
