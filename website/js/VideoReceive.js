@@ -1,4 +1,6 @@
-function launchcam(ipServeur){
+var ipServeur = "10.30.50.186"
+
+function launchcam(){
 
     //var ws1 = new WebSocket("ws://10.30.50.185:5678/"); // Tu dois mettre l'addresse de la machine qui fait tourner le python
     var ws1 = new WebSocket("ws://localhost:8585/");
@@ -13,7 +15,7 @@ function launchcam(ipServeur){
         console.log(event.data);
     }
 }
-openSocket = (ipServeur) => {
+openSocket = () => {
     socket = new WebSocket("ws://"+ipServeur+":5678");
     let msg = document.getElementById("msg");
     socket.addEventListener('open', (e) => {
@@ -35,7 +37,7 @@ openSocket = (ipServeur) => {
     });
 }
 
-function switchmode(ipServeur){
+function switchmode(){
     var ws1 = new WebSocket("ws://"+ipServeur+":5679");
     //var ws1 = new WebSocket("ws://localhost:8585/");
     content = document.getElementById("spanMode").textContent
@@ -54,7 +56,7 @@ function switchmode(ipServeur){
     }
 }
 
-function modePark(ipServeur){
+function modePark(){
     var ws1 = new WebSocket("ws://"+ipServeur+":5679");
     //var ws1 = new WebSocket("ws://localhost:8585/");
     content = document.getElementById("parkMode").textContent
@@ -72,5 +74,3 @@ function modePark(ipServeur){
         document.getElementById("parkMode").textContent="Park mode : Off"
     }
 }
-
-let ipServeur = "10.30.50.185"
